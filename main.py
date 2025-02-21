@@ -7,6 +7,9 @@ def books_collector():
 
 def test_add_new_book(books_collector):
     return BooksCollector()
+def test_add_new_book(books_collector):
+    books_collector.add_new_book("1984", "George Orwell")
+    assert len(books_collector.books) == 1
 
 class BooksCollector:
 
