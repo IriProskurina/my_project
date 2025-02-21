@@ -1,6 +1,13 @@
 import pytest
 from src.main import BooksCollector
 
+@pytest.fixture
+def books_collector():
+    return BooksCollector()
+
+def test_add_new_book(books_collector):
+    return BooksCollector()
+
 class BooksCollector:
 
     def __init__(self):
