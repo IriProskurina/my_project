@@ -1,3 +1,6 @@
+import pytest
+from src.main import BooksCollector
+
 class BooksCollector:
 
     def __init__(self):
